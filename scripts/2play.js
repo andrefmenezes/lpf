@@ -99,13 +99,6 @@
 		verificaVencedor();
 		}
 
-		function fun(){
-			
-				document.getElementById('content-center').style.display = "none"
-               document.getElementById('container').style.display="flex"
-
-}
-
 
 
 
