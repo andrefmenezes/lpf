@@ -6,7 +6,7 @@ body{
 
     background-color: #000000;
 }
-.content-center{
+#content-center{
 
     width: 100%;
     max-width: 300px;
@@ -18,23 +18,23 @@ body{
     
 
 }
-.content-center img{
+#content-center img{
 
   
     width: 125%;
     padding-right:  5px;
 }
 
-.content-center .text-center{
+#content-center .text-center{
 
     text-align: center;
 }
 
-.content-center form{
+#content-center form{
     margin: 20px;
 }
 
-.content-center input, .content-center button{
+#content-center input, #content-center button{
 width: 100%;
 padding: 10px 5px;
 
@@ -42,7 +42,7 @@ border: none;
 outline: none; 
 
 }
-.content-center input{
+#content-center input{
 
     border-bottom-color: #ccc ;
     border-bottom-style: solid;
@@ -51,20 +51,20 @@ outline: none;
     border-radius: 5px;
 }
 
-.content-center input:hover{
+#content-center input:hover{
 border-bottom-color: rgb(255,129,0);
 }
 
-.content-center button{
+#content-center button{
      background-color: rgb(255,129,0);
      color: #FFF;
 }
 
-.content-center button:hover{
+#content-center button:hover{
     background-color: rgb(196, 100, 5);
     cursor: pointer;
 }
-.content-center button:active{
+#content-center button:active{
     background-color: #bd2626;
     cursor: pointer;
 }

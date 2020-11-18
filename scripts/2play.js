@@ -99,13 +99,10 @@
 		verificaVencedor();
 		}
 
-		function s(){
-			var j1 = document.getElementById('j1')
-			var j2 = document.getElementById('j2')
-			if( j1.value == '' && j2.value ==''){
-				alert('err')
-				break;
-			}
+		function fun(){
+			
+				document.getElementById('content-center').style.display = "none"
+               document.getElementById('container').style.display="flex"
 
 }
 

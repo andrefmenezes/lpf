@@ -9,14 +9,14 @@
 </head>
 <body class = "noscroll">
 
-  <div class="content-center">
+  <div id="content-center" >
     <div class="text-center">
 
       <a><img src="./_imagens/original.png" alt="imagem"></a>
   
     </div>
 
-    <form  id="form-login">
+    <form action="#container"  id="form-login">
     
         <div>
     
@@ -29,7 +29,7 @@
     </div>
     
     <div>
-     <a href="#container">Enviar</a>  
+     <button  onclick="fun()" type="submit"> Enviar</button>   
      
     
     </div>
@@ -40,7 +40,7 @@
 
 
 
-  <div id="container">
+  <div id="container" style="display: none;" >
     <h2 id="title">Jogo da velha</h2>
     <table id="table">
       <tr class="tr">
