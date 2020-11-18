@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  background-color: black;
+  font-family: "Roboto";
+  color: #eeeeee;
+}
+
+#container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+#container #title {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#container #menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 16pt;
+}
+
+#container #menu input {
+  height: 20px;
+  width: 100px;
+  margin-left: 5px;
+}
+
+#container #table {
+  border-spacing: 0px;
+}
+
+#container #table tr .canto-left-top {
+  border-bottom: solid 8px #ff544f;
+  border-right: solid 8px #ff544f;
+  border-top-left-radius: 15px;
+  border-radius:10px;
+}
+
+#container #table tr .canto-left-bottom {
+  border-top: solid 8px #fac42a;
+  border-right: solid 8px #fac42a;
+  border-bottom-left-radius: 15px;
+  border-radius:10px;
+}
+
+#container #table tr .canto-right-top {
+  border-bottom: solid 8px #ff544f;
+  border-left: solid 8px #ff544f;
+  border-top-right-radius: 15px;
+  border-radius:10px;
+}
+
+#container #table tr .canto-right-bottom {
+  border-top: solid 8px #fac42a;
+  border-left: solid 8px #fac42a;
+  border-bottom-right-radius: 15px;
+  border-radius:10px;
+}
+
+#container #table tr .mind-left {
+  border-right: solid 8px #ff7e3b;
+  border-radius:10px;
+}
+
+#container #table tr .mind-right {
+  border-left: solid 8px #ff7e3b;
+  border-radius:10px;
+}
+
+#container #table tr .mind-top {
+  border-bottom: solid 8px #ff544f;
+  border-radius:10px;
+}
+
+#container #table tr .mind-bottom {
+  border-top: solid 8px #fac42a;
+  border-radius:10px;
+}
+
+#container #table tr td{
+  color: #eeeeee;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 36pt;
+  transition: 0.2s;
+}
+
+#container #table tr td:hover{
+  cursor: pointer;
+  background-color: #eeeeee10;
+}
+footer{
+  float: right;
+  margin-top: -4%;
+ margin-right: 7%;
+}
+.placar{
+  margin-top: -8%;
+  width: 70px;
+		height: 70px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.placar td{ 
+  border-radius:10px;
+  border:solid 3px  ;
+  color: rgba(255, 138, 0, 1);
+}

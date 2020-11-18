@@ -1,0 +1,80 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <link rel="stylesheet" href="./css/jogo.css"> 
+  <link rel="stylesheet" href="./css\main.css" type="text/css">
+  
+</head>
+<body class = "noscroll">
+
+  <div class="content-center">
+    <div class="text-center">
+
+      <a><img src="./_imagens/original.png" alt="imagem"></a>
+  
+    </div>
+
+    <form  id="form-login">
+    
+        <div>
+    
+            <input type="name" id="j1" placeholder="Jogador 1" required >
+    </div>
+    
+    <div>
+        <input type="name" id="j2" placeholder="Jogador 2" required>
+    
+    </div>
+    
+    <div>
+     <a href="#container">Enviar</a>  
+     
+    
+    </div>
+    
+    </form>
+    
+  </div>
+
+
+
+  <div id="container">
+    <h2 id="title">Jogo da velha</h2>
+    <table id="table">
+      <tr class="tr">
+        <td class="canto-left-top" id="c1_1" onclick="marca(1,1);"></td>
+        <td class="mind-top" id="c1_2" onclick="marca(1,2);"></td>
+        <td class="canto-right-top" id="c1_3" onclick="marca(1,3);"></td>
+      </tr>
+      <tr class="tr">
+        <td class="mind-left" id="c2_1" onclick="marca(2,1);"></td>
+        <td class="mind" id="c2_2" onclick="marca(2,2);"></td>
+        <td class="mind-right" id="c2_3" onclick="marca(2,3);"></td>
+      </tr>
+      <tr class="tr">
+        <td class="canto-left-bottom" id="c3_1" onclick="marca(3,1);"></td>
+        <td class="mind-bottom" id="c3_2" onclick="marca(3,2);"></td>
+        <td class="canto-right-bottom" id="c3_3" onclick="marca(3,3);"></td>
+      </tr>
+    </table>
+  </div>
+  <table class="placar" border="1">
+    <tr>
+        <td rowspan="2">Placar</td>
+        <td id="pj1">junio</td>
+        <td id="pj2">dakjfakdjf</td>
+        <td>Empate</td>
+    </tr>
+    <tr>
+        <td id="ptx"></td>
+        <td id="pt0"></td>
+        <td id="ptEmpate"></td>
+    </tr>
+</table>
+  <footer><a href="index.html"><img src="_imagens\sair.png" ></a></footer>
+  <script src="scripts\2play.js"></script>
+  
+</body>
+</html>
