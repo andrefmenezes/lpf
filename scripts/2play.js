@@ -92,12 +92,42 @@
 		}
 
 		function marca(x,y) {
-		if(vezdox) document.getElementById('c'+x+'_'+y).innerHTML = "X";
-		else document.getElementById('c'+x+'_'+y).innerHTML = 0;
-		vezdox=!vezdox;
+			nome()
+			var casa = document.getElementById('c'+x+'_'+y)
+			if(casa.innerHTML == ''){
+				if(vezdox) casa.innerHTML = "X";
+				else casa.innerHTML = 0;
+				vezdox=!vezdox;
+			}else{
+				alert('casa já está preenchida')
+			}
+	
 		//verifica se houve vencedor.
 		verificaVencedor();
 		}
+function nome(){
+	var j1 = document.getElementById('j1')
+	var j2 = document.getElementById('j2')
+	if(j1.value == '' && j2.value == ''){
+		
+		document.getElementById('pj1').innerHTML = 'Jogador 1'
+		document.getElementById('pj2').innerHTML = 'Jogador 2'
+	}
+	else if(j1.value == '' && j2.value != ''){				
+		document.getElementById('pj1').innerHTML = 'Jogador 1'
+		document.getElementById('pj2').innerHTML = j2.value
+	}
+	else if(j1.value != '' && j2.value == ''){
+			
+		document.getElementById('pj1').innerHTML = j1.value
+		document.getElementById('pj2').innerHTML = 'Jogador 2'
+	}
+	else{
+		document.getElementById('pj1').innerHTML = j1.value
+		document.getElementById('pj2').innerHTML = j2.value
+	}
+	
+}
 
 
 
